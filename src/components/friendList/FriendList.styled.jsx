@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
 export const Friends = styled.ul`
-  width: 180px;
+  width: 195px;
   margin: auto;
 `;
