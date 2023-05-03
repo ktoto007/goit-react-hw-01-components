@@ -32,7 +32,6 @@ export const SecondaryText = styled.p`
 `;
 
 export const Stats = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 40px;
