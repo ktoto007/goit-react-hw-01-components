@@ -6,7 +6,8 @@ import { StatsList, Container } from './Statistics.styled';
 export const Statistics = ({ title, statistic }) => {
   return (
     <Container>
-      <Title text={title} />
+      {title.length > 0 && <Title text={title} />}
+
       <StatsList>
         {statistic.map(stat => (
           <OneStat
@@ -27,6 +28,6 @@ Statistics.propTypes = {
       id: PropTypes.string,
       label: PropTypes.string,
       percentage: PropTypes.number,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };
